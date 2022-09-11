@@ -67,6 +67,7 @@ body{
     background-size: cover;
     background-position: center;
     border: 7px solid white;
+    animation: rotating 20s linear infinite;
 
 }
 
@@ -138,4 +139,13 @@ body{
 .music-player .description .buttons button i{
     font-size: 20px;
     color: white;
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
