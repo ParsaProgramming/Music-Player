@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Bg: #2f3640;
+}
+
+body{
+    font-family: Poppins;
+    background: #f1f1f1;
+}
+
+
+.music-player{
+    background : var(--Bg);
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 570px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color: white;
+}
+
+.music-player .menu{
+    background: #e67e22;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+
+}
+
+
+.music-player .image-place{
+    width: 260px;
+    height: 260px;
+    background: red;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 50%;
+    background-image: url("./img/music-cover.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 7px solid white;
+
+}
+
+.music-player .description{
+    margin-top: 20px;
+    text-align: center;
+}
+.music-player .description .complete-bar .bar{
+    width: 400px;
+    height: 10px;
+    background: #34495e;
+    border-radius: 50px;
+    position: relative;
+}
+
+.music-player .description .complete-bar .bar span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    border: 7px solid #e67e22;
+    cursor: pointer;
+}
+
+.music-player .description .complete-bar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.music-player .description .complete-bar .time{
+    margin-left: 10px;
+    
+}
+
+.music-player .description .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.music-player .description .buttons button{
+    background: #e67e22;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+.music-player .description .buttons button i{
+    font-size: 20px;
+    color: white;
+}
