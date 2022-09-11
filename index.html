@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <title>Music player</title>
-</head>
-<body>
-    <div class="music-player">
+  </head>
+  <body>
+    <div class="conatainer">
+      <div class="music-player">
         <div class="menu">
-            <i class = "fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </div>
         <div class="image-place"></div>
         <div class="description">
-            <h1>I'm only human after all</h1>
-            <h4>Rag'n'Bone Man</h4>
-            <div class="complete-bar">
-                <div class="bar">
-                    <div class="music-bar-time"></div>
-                    <span></span>
-                </div>
-                <div class="time">
-                    <span>00:00</span>
-                </div>
+          <h1>I'm only human after all</h1>
+          <h4>Rag'n'Bone Man</h4>
+          <div class="complete-bar">
+            <div class="bar">
+              <div class="music-bar-time"></div>
+              <span></span>
             </div>
-            <div class="buttons">
-                <button id = "prev"><i class = "fas fa-backward"></i></button>
-                <button id = "play"><i class = "fas fa-play"></i></button>
-                <button id = "next"><i class = "fas fa-forward"></i></button>
+            <div class="time">
+              <span>00:00</span>
             </div>
+          </div>
+          <div class="buttons">
+            <button id="prev"><i class="fas fa-backward"></i></button>
+            <button id="play"><i class="fas fa-play"></i></button>
+            <button id="next"><i class="fas fa-forward"></i></button>
+          </div>
         </div>
+      </div>
     </div>
-    <script src = "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
