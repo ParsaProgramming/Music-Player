@@ -6,6 +6,7 @@ let timeTxt = document.querySelector(".time span");
 let timebarState = document.querySelector(".music-bar-time");
 let circle = document.querySelector(".bar span");
 let audiofile = document.querySelector("audio");
+let image = document.querySelector(".image-place");
 let playing = false;
 
 function PlayMusic() {
@@ -34,8 +35,6 @@ function SetTime(){
 
     timeTxt.textContent = minutes + ":" + seconds;
 
-    timebarState.style.width = (audiofile.currentTime * 100 / audiofile.duration) + "%";
-    circle.style.left = (audiofile.currentTime * 100 / audiofile.duration) + "%";
 }
 
 
