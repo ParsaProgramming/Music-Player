@@ -20,7 +20,7 @@ body{
     left:50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 440px;
     height: 570px;
     border-radius: 10px;
     color: white;
@@ -52,6 +52,7 @@ body{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 
@@ -83,12 +84,12 @@ body{
 }
 
 .music-player .description .complete-bar .bar .music-bar-time{
-    width: 100%;
+    width: 0%;
     height: 100%;
     background: #e67e22;
-    border-radius: 50px;
     position: absolute;
-    right: 100%;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
 
 }
 
@@ -131,6 +132,7 @@ body{
     margin: 10px;
     border:none;
     cursor: pointer;
+    outline: none;
 }
 
 .music-player .description .buttons button i{
