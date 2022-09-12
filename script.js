@@ -34,6 +34,8 @@ function SetTime(){
     }
 
     timeTxt.textContent = minutes + ":" + seconds;
+    timebarState.style.width = (audiofile.currentTime *100 / audiofile.duration) + "%";
+    circle.style.left = (audiofile.currentTime *100 / audiofile.duration) + "%";
 
 }
 
